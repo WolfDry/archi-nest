@@ -5,9 +5,10 @@ import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { HelloModule } from './hello/hello.module';
 import { UserModule } from './user/user.module';
+import { SandwishModule } from './sandwish/sandwish.module';
 
 @Module({
-  imports: [PrismaModule, AuthModule, HelloModule, UserModule],
+  imports: [PrismaModule, AuthModule, HelloModule, UserModule, SandwishModule],
   providers: [
     { provide: APP_GUARD, useClass: JwtAuthGuard }
   ]

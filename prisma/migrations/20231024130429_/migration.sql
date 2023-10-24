@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Sandwish" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "bread" INTEGER NOT NULL,
+    "meat" INTEGER NOT NULL,
+    "salad" INTEGER NOT NULL
+);

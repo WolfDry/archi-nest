@@ -19,3 +19,10 @@ model Role {
     label String @unique
     users User[]
 }
+
+model Sandwish {
+    id    Int @id @default(autoincrement())
+    bread Int
+    meat  Int
+    salad Int
+}
